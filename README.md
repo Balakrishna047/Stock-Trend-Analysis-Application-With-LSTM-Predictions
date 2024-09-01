@@ -8,8 +8,33 @@ make future stock predictions.
 achieved a prediction accuracy of [accuracy metric] %.
 * Visualised model predictions and trends using Power BI.
 
-
-
+LSTM ARCHITECTURE
+* 1. Data Preprocessing:
+ Collect historical stock price data along with other relevant features such as trading volume, market sentiment indicators, etc.
+ Normalize the data to ensure that all features are on a similar scale. This step is crucial for the convergence and stability of the neural network during training.
+2. Sequence Formation:
+ Convert the time series data into sequences of fixed length. Each sequence represents a window of historical data, and the target is the subsequent data point.
+ This step involves choosing the sequence length, which is a hyperparameter that affects the model's ability to capture long-term dependencies.
+3. Model Architecture:
+ Construct an LSTM network for sequence prediction. The architecture typically consists of an input layer, one or more LSTM layers, and an output layer.
+ Optionally, you can include additional layers such as dropout layers to prevent overfitting, or dense layers for additional feature processing.
+25
+4. Training:
+ Split the data into training and testing sets. It's common to reserve a portion of the data (e.g., the last 20%) for testing to evaluate the model's performance on unseen data.
+ Train the LSTM model using the training data. During training, the model learns to map sequences of historical data to future stock prices.
+5. Prediction:
+ After training, use the trained model to make predictions on the test set or new unseen data.
+ Input historical sequences into the trained LSTM model and obtain predictions for the next time step.
+6. Evaluation:
+ Evaluate the performance of the LSTM model using appropriate metrics such as Mean Squared Error (MSE), Mean Absolute Error (MAE), or directional accuracy.
+ Compare the predicted stock prices with the actual prices to assess the model's accuracy and effectiveness in capturing the underlying trends.
+26
+7. Fine-Tuning:
+ Depending on the performance of the model, you may need to fine-tune hyperparameters such as the number of LSTM layers, the number of hidden units, learning rate, etc.
+ Iterate on the model architecture and training process to improve performance further.
+8. Deployment:
+ Once satisfied with the model's performance, deploy it in a real-world application for stock trend analysis.
+ Monitor the model's performance over time and update it as necessary to adapt to changing market conditions.
 LSTM ALGORITHM
 
 Algorithm for Stock Trend Analysis using LSTM Predictions
