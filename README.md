@@ -13,7 +13,7 @@ achieved a prediction accuracy of [accuracy metric] %.
 LSTM ALGORITHM
 
 Algorithm for Stock Trend Analysis using LSTM Predictions
-Step 1: Data Collection
+-> Step 1: Data Collection
 * Gather historical stock price data from reliable sources like financial APIs (e.g., Alpha Vantage, Yahoo Finance) or databases.
 Step 2: Data Preprocessing
 * Clean the data by handling missing values, adjusting for stock splits or dividends, and converting raw data into a suitable format for modeling.
