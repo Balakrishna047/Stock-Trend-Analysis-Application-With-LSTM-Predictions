@@ -9,7 +9,7 @@ achieved a prediction accuracy of [accuracy metric] %.
 * Visualised model predictions and trends using Power BI.
 
 LSTM ARCHITECTURE
-* 1. Data Preprocessing:
+1. Data Preprocessing:
  Collect historical stock price data along with other relevant features such as trading volume, market sentiment indicators, etc.
  Normalize the data to ensure that all features are on a similar scale. This step is crucial for the convergence and stability of the neural network during training.
 2. Sequence Formation:
