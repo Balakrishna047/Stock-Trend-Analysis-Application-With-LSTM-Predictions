@@ -13,32 +13,32 @@ achieved a prediction accuracy of [accuracy metric] %.
 LSTM ALGORITHM
 
 Algorithm for Stock Trend Analysis using LSTM Predictions
--> Step 1: Data Collection
+* Step 1: Data Collection
 * Gather historical stock price data from reliable sources like financial APIs (e.g., Alpha Vantage, Yahoo Finance) or databases.
-Step 2: Data Preprocessing
+* Step 2: Data Preprocessing
 * Clean the data by handling missing values, adjusting for stock splits or dividends, and converting raw data into a suitable format for modeling.
 * Normalize or scale the data to ensure uniformity across different features.
-Step 3: Data Splitting
+* Step 3: Data Splitting
 * Split the dataset into training and testing sets. Typically, use around 70-80% of the data for training and the remaining for testing/validation.
-Step 4: Feature Engineering
+* Step 4: Feature Engineering
 * Extract relevant features from the dataset. Common features include stock prices, volume, moving averages, technical indicators (e.g., RSI, MACD), and sentiment scores if available.
-Step 5: Building the LSTM Model
+* Step 5: Building the LSTM Model
 * Construct an LSTM neural network using a framework like TensorFlow or PyTorch.
 * Define the architecture with input layers, LSTM layers (with optional dropout for regularization), and output layers.
-Step 6: Training the LSTM Model
+* Step 6: Training the LSTM Model
 * Train the LSTM model using the training dataset.
 * Define the loss function (e.g., mean squared error) and optimizer (e.g., Adam optimizer).
 * Feed the training data into the model and adjust the model's weights through backpropagation.
-Step 7: Model Evaluation
+* Step 7: Model Evaluation
 * Evaluate the LSTM model's performance using the testing/validation dataset.
 * Use metrics such as accuracy, mean squared error, or other relevant metrics based on the problem's requirements.
-Step 8: Making Predictions
+* Step 8: Making Predictions
 * Used the trained LSTM model to make predictions on unseen data (future time steps).
 * Compared the predicted values with the actual values to assess the model's predictive capability.
-Step 9: Post-Processing
+* Step 9: Post-Processing
 * Visualize the model's predictions alongside the actual stock prices to gain insights into the predicted trends.
 * Adjust model parameters or experiment with different architectures to optimize performance.
-Step 10: Deployment and Monitoring
+* Step 10: Deployment and Monitoring
 * Deploy the LSTM-based stock trend analysis model as part of a larger application (e.g., web service, mobile app).
 * Continuously monitored and updated the model using new data to improve accuracy an
 
